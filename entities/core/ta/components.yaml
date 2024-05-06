@@ -1,0 +1,94 @@
+# Расширение технической архитектуры
+
+entities:
+  seaf.ta.components.server:
+    schema:
+      $defs:
+        seaf.ta.components.server.sw:
+          title: Расширение компонента server
+          type: object
+          properties:
+            os:
+              title: Операционная система
+              type: string
+              $ref: "#/$rels/seaf.sw.distrib.distrib"
+            bit:
+              title: Битность ОС
+              type: integer
+              enum: [32, 64]
+          required:
+              - os
+              - bit
+      patternProperties:
+          "^[a-zA-Z0-9_\\.]*$":
+            type: object
+            properties:
+              soft:
+                $ref: "#/$defs/seaf.ta.components.server.sw"
+
+  seaf.ta.components.hw_storage:
+    schema:
+      $defs:
+        seaf.ta.components.hw_storage.sw:
+          title: Расширение компонента Hardware Storage
+          type: object
+          properties:
+            firmware:
+              title: Firmware
+              type: string
+              $ref: "#/$rels/seaf.sw.distrib.distrib"
+          required:
+            - firmware
+      patternProperties:
+        "^[a-zA-Z0-9_\\.]*$":
+          type: object
+          properties:
+            soft:
+              $ref: "#/$defs/seaf.ta.components.hw_storage.sw"
+
+  seaf.ta.components.network:
+    schema:
+      $defs:
+        seaf.ta.components.network.sw:
+          title: Расширение компонента Network Appliance
+          type: object
+          properties:
+            firmware:
+              title: Firmware
+              type: string
+              $ref: "#/$rels/seaf.sw.distrib.distrib"
+          required:
+            - firmware
+      patternProperties:
+        "^[a-zA-Z0-9_\\.]*$":
+          type: object
+          properties:
+            soft:
+              $ref: "#/$defs/seaf.ta.components.network.sw"
+
+  seaf.ta.components.user_device:
+    schema:
+      $defs:
+        seaf.ta.components.user_device.sw:
+          title: Расширение компонента Пользовательское устройство
+          type: object
+          properties:
+            os:
+              title: Операционная система
+              type: string
+              $ref: "#/$rels/seaf.sw.distrib.distrib"
+            os_type:
+              title: Тип операционной системы
+              type: string
+              enum:
+                - desktop
+                - mobile
+          required:
+            - os
+            - os_type
+      patternProperties:
+        "^[a-zA-Z0-9_\\.]*$":
+          type: object
+          properties:
+            soft:
+              $ref: "#/$defs/seaf.ta.components.user_device.sw"

@@ -1,2 +1,3 @@
 imports:
   - sw/software_object.yaml
+  - core/root.yaml
