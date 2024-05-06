@@ -1,0 +1,133 @@
+# Презентация компонентов в табличном виде
+entities:
+  seaf.sw:
+    presentations:
+      classifier_md:
+        type: markdown
+        template: templates/classifier.md
+
+      registry_md:
+        type: markdown
+        template: templates/registry.md
+
+      list:
+        params:
+          type: object
+          properties:
+            component-id:
+              title: Идентификатор компонента
+              type: string
+            class-id:
+              title: Идентификатор класса
+              type: string
+          required:
+            - component-id
+            - class-id
+        type: table
+        headers:
+          - value: attr
+            sortable: true
+            align: left
+            width: 20%
+
+          - value: attr_val
+            sortable: true
+            align: left
+            width: 20%
+            link: link
+
+        source: >
+          (
+              $titles := $eval($.functions."seaf.ta".get_titles, [{"c":$params."class-id"},$]);
+              $lookup($lookup($, $params."class-id"), $params."component-id")~>$each(
+                  function($v,$k){(
+                     $type($v) = 'string'?($contains($v, "seaf.sw")?
+                          {"attr":$lookup($titles, $k), "attr_val": ($i:= $lookup($.**, $v); $i.class_id & '  ' & $i."class_name")}:
+                          {"attr":$lookup($titles, $k), "attr_val":$v}):
+                     $type($v) = 'array'?{"attr":$lookup($titles, $k), "attr_val": $map($v,function($val){
+                          $contains($val, "seaf.sw")?($i:= $lookup($.**, $val); $i.class_id & '  ' & $i."class_name"):$val})};
+                  )});         
+          )
+          
+
+  seaf.sw.classifier.class:
+    presentations:
+      table:
+        type: table
+        headers:
+          - value: class_id
+            text: ID
+            sortable: true
+            align: left
+            width: 20%
+
+          - value: class
+            text: Класс
+            sortable: true
+            align: left
+            width: 20%
+
+          - value: description
+            text: Описание
+            sortable: true
+            align: left
+            width: 20%
+
+        source: >
+          (
+            $id := $boolean(($params."class-id"))? "seaf.sw.classifier.part." & $params."class-id":/.*/;
+            [[($."seaf.sw.classifier.class").$spread().(
+              ($contains($.*.part, $id))?(
+             $.*.{
+                "class_id": class_id,
+                "description": description,
+                "class": class_name
+              })
+            )]^(class_id)]
+          )
+
+  seaf.sw.distrib:
+    presentations:
+      table:
+        type: table
+        headers:
+          - value: object_link
+            text: ID
+            sortable: true
+            align: left
+            width: 20%
+            link: link
+
+          - value: name
+            text: Наименование
+            sortable: true
+            align: left
+            width: 20%
+
+          - value: version
+            text: Версия
+            sortable: true
+            align: left
+            width: 20%
+
+          - value: vendor
+            text: Производитель
+            sortable: true
+            align: left
+            width: 20%
+
+        source: >
+          (  
+            $class := $split($self."$base", '/')[2];
+            [[$lookup($, $class ).$spread().(
+                      $COMPONENT_ID := $keys()[0];
+                      $contains($COMPONENT_ID, $boolean($params."class-id")?$params."class-id":'.')?
+                          $.*.{
+                            "object_link": $COMPONENT_ID,  
+                            "name": s_name,
+                            "vendor": vendor,
+                            "version": version,
+                            "link": '/entities/seaf.sw/list?component-id=' & $COMPONENT_ID & '&class-id=' & $class
+                          }
+                    )]^(name)]
+          )

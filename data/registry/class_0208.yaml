@@ -1,0 +1,12 @@
+# Средства мониторинга и управления
+
+  seaf.sw.distrib:
+    seaf.sw.distrib.0208.01:
+      s_name: Zabbix 6.4
+      f_name: Zabbix 6.4
+      vendor: zabbix.com
+      class: seaf.sw.classifier.class.02.04
+      license: opensource
+      license_type: GNU General Public License (GPL)
+      version: '6.4.13.rc'
+      support_expiration: 31/12/2024

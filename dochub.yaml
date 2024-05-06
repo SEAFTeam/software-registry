@@ -1,0 +1,5 @@
+imports:
+  - entities/root.yaml
+  - data/root.yaml
+  - presentation/root.yaml
+  - menu/root.yaml

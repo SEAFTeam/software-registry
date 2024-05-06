@@ -1,0 +1,14 @@
+# Средства фильтрации негативного контента
+
+  seaf.sw.distrib:
+    seaf.sw.distrib.0304.01:
+      s_name: 'Kaspersky Security для почтовых серверов'
+      vendor: 'АО "ЛАБОРАТОРИЯ КАСПЕРСКОГО"'
+      class: seaf.sw.classifier.class.03.04
+      license: commercial
+      license_type: 'Проприетарная лицензия'
+      version: ''
+      support_expiration: 'нет данных'
+      description: ''
+      web-site: 'https://www.kaspersky.ru/small-to-medium-business-security/mail-server'
+      registry_ru: 'Реестровая запись №203 от 18.03.2016'
