@@ -12,6 +12,12 @@ $package:
     # Зависимости от других пакетов
     dependencies:
       seaf-core: ">=1.2.7"
+docs:
+  seaf.sw.general:
+    description: SEAF Программное обеспечение
+    type: markdown
+    location: Software/Программное обеспечение
+    source: README.md
 imports:
   - entities/root.yaml
   - data/root.yaml
