@@ -1,0 +1,35 @@
+# Расширение программной архитектуры
+
+entities:
+  components:
+    schema:
+      $defs:
+        seaf.app.components.sw:
+          title: Расширение компонента
+          type: object
+          properties:
+            distrib:
+              title: Программное обеспечение
+              type: array
+              items:
+                $ref: "#/$rels/seaf.sw.distrib.distrib"
+            apps:
+              title: Опции программного обеспечения
+              type: array
+              items:
+                type: string
+            licenses:
+              title: Количество лицензий
+              type: string
+            license_object:
+              title: Объект лицензирования
+              type: string
+              enum: [ 'users', 'connections', 'volume', 'pieces' ]
+          required:
+            - distrib
+      patternProperties:
+        "^[a-zA-Z0-9_\\.]*$":
+          type: object
+          properties:
+            soft:
+              $ref: "#/$defs/seaf.app.components.sw"

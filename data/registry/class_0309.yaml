@@ -1,0 +1,19 @@
+# Средства обнаружения и предотвращения утечек информации
+
+  seaf.sw.distrib:
+    seaf.sw.distrib.0309.01:
+      s_name: 'InfoWatch Prediction'
+      vendor: 'ООО «ЛАБОРАТОРИЯ ИНФОВОТЧ»'
+      class: seaf.sw.classifier.class.03.09
+      class_ext:
+        - seaf.sw.classifier.class.02.08
+        - seaf.sw.classifier.class.03.02
+        - seaf.sw.classifier.class.03.15
+        - seaf.sw.classifier.class.03.17
+      license: commercial
+      license_type: 'Проприетарная лицензия'
+      version: ''
+      support_expiration: 'нет данных'
+      description: 'InfoWatch Prediction – инструмент предиктивной аналитики данных DLP-системы для прогнозирования рисков информационной безопасности.'
+      web-site: 'https://www.infowatch.ru/products/infowatch-prediction'
+      registry_ru: 'Реестровая запись №19043 от 18.09.2023'

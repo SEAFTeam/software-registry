@@ -1,0 +1,109 @@
+# Операционные системы общего назначения
+seaf.sw.distrib:
+
+  seaf.sw.distrib.0209.01:
+    s_name: Ubuntu
+    f_name: Ubuntu 18.04 LTS «Bionic Beaver»
+    vendor: Canonical Ltd
+    class: seaf.sw.classifier.class.02.09
+    license: opensource
+    license_type: GNU General Public License (GPL)
+    version: '18.04'
+    support_expiration: 31/12/2028
+
+  seaf.sw.distrib.0209.02:
+    s_name: Ubuntu
+    f_name: Ubuntu 22.04 LTS «Jammy Jellyfish»
+    vendor: Canonical Ltd
+    class: seaf.sw.classifier.class.02.09
+    license: opensource
+    license_type: GNU General Public License (GPL)
+    version: '22.04'
+    support_expiration: 30/04/2027
+
+  seaf.sw.distrib.0209.03:
+    s_name: Ubuntu
+    f_name: Ubuntu 20.04 LTS «Jammy Jellyfish»
+    vendor: Canonical Ltd
+    class: seaf.sw.classifier.class.02.09
+    license: opensource
+    license_type: GNU General Public License (GPL)
+    version: '20.04'
+    support_expiration: 30/04/2025
+
+  seaf.sw.distrib.0209.04:
+    s_name: MacOs
+    f_name: OS X El Capitan
+    vendor: Apple inc.
+    class: seaf.sw.classifier.class.02.09
+    license: commercial
+    license_type: Проприетарная лицензия
+    version: 10.11.6
+    support_expiration: 31/10/2019
+
+  seaf.sw.distrib.0209.05:
+    s_name: Windows Server 2019
+    vendor: Microsoft inc.
+    class: seaf.sw.classifier.class.02.09
+    license: commercial
+    license_type: Проприетарная лицензия
+    version: '2019'
+    support_expiration: 09/01/2029
+
+  seaf.sw.distrib.0209.06:
+    s_name: Windows Server 2022
+    vendor: Microsoft inc.
+    class: seaf.sw.classifier.class.02.09
+    license: commercial
+    license_type: Проприетарная лицензия
+    version: '2022'
+    support_expiration: 13/10/2026
+
+  seaf.sw.distrib.0209.07:
+    s_name: Windows 10 Pro
+    vendor: Microsoft inc.
+    class: seaf.sw.classifier.class.02.09
+    license: commercial
+    license_type: Проприетарная лицензия
+    version: 10 Pro
+    support_expiration: 14/10/2025
+
+  seaf.sw.distrib.0209.08:
+    s_name: CentOs
+    f_name: CentOs Stream 8
+    vendor: Read Hat.
+    class: seaf.sw.classifier.class.02.09
+    license: opensource
+    license_type: GNU General Public License (GPL)
+    version: 'Steam 8'
+    support_expiration: 31/05/2024
+
+  seaf.sw.distrib.0209.09:
+    s_name: CentOs
+    f_name: CentOs Stream 9
+    vendor: Read Hat.
+    class: seaf.sw.classifier.class.02.09
+    license: opensource
+    license_type: GNU General Public License (GPL)
+    version: 'Steam 9'
+    support_expiration: 31/05/2027
+
+  seaf.sw.distrib.0209.10:
+    s_name: OpenSUSE
+    f_name: OpenSUSE Leap 15.04
+    vendor: EQT Partners
+    class: seaf.sw.classifier.class.02.09
+    license: opensource
+    license_type: GNU General Public License (GPL)
+    version: '15.04'
+    support_expiration: 31/12/2023
+
+  seaf.sw.distrib.0209.11:
+    s_name: Debian
+    f_name: Debian "bullseye" 11
+    vendor: debian-www@lists.debian.org
+    class: seaf.sw.classifier.class.02.09
+    license: opensource
+    license_type: GNU General Public License (GPL)
+    version: '11'
+    support_expiration: 31/07/2024

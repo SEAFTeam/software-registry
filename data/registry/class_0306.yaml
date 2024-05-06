@@ -1,0 +1,26 @@
+# Средства антивирусной защиты
+
+  seaf.sw.distrib:
+    seaf.sw.distrib.0306.01:
+      s_name: 'Kaspersky Security Element'
+      vendor: 'АО "ЛАБОРАТОРИЯ КАСПЕРСКОГО"'
+      class: seaf.sw.classifier.class.03.06
+      license: commercial
+      license_type: 'Проприетарная лицензия'
+      version: ''
+      support_expiration: 'нет данных'
+      description: 'Это новое решение «Лаборатории Касперского» в сегменте малого бизнеса, созданное специально для защиты микроорганизаций на территории РФ. Продукт предоставляет базовые функции обеспечения безопасности – антивирусную защиту от всех видов угроз, включая программы-вымогатели, для устройств на ОС Windows.'
+      web-site: 'https://go.kaspersky.com/Security-Element.html'
+      registry_ru: 'Реестровая запись №11934 от 29.10.2021'
+
+    seaf.sw.distrib.0306.02:
+      s_name: 'Kaspersky Total Security'
+      vendor: 'АО "ЛАБОРАТОРИЯ КАСПЕРСКОГО"'
+      class: seaf.sw.classifier.class.03.06
+      license: commercial
+      license_type: 'Проприетарная лицензия'
+      version: ''
+      support_expiration: 'нет данных'
+      description: 'Решение обеспечивает максимальную защиту ваших устройств и дарит вам уверенность в безопасности и приватности вашей цифровой жизни. Наш Менеджер паролей и зашифрованное хранилище обеспечивают надежное хранение и передачу ваших данных, не допуская их утечки.'
+      web-site: 'https://www.kaspersky.ru/total-security'
+      registry_ru: 'Реестровая запись №8331 от 30.12.2020'

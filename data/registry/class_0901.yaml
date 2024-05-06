@@ -1,0 +1,29 @@
+# Средства управления бизнес-процессами (BPM)
+
+  seaf.sw.distrib:
+    seaf.sw.distrib.0901.01:
+      s_name: '"1С:Бухгалтерия 7.7"'
+      f_name: '1С:Предприятие 7.7 "Бухгалтерский учет"'
+      vendor: 'ООО "1С"'
+      class: seaf.sw.classifier.class.09.01
+      class_ext:
+        - seaf.sw.classifier.class.09.07
+      license: commercial
+      license_type: 'Проприетарная лицензия'
+      version: '4.5'
+      support_expiration: 'нет данных'
+      description: '"1С:Бухгалтерия 7.7" - универсальная программа массового назначения для автоматизации бухгалтерского учета. Она представляет собой компоненту "Бухгалтерский учет" системы программ "1С:Предприятие 7.7" с типовой конфигурацией. '
+      web-site: 'https://1c.ru/rus/products/1c/predpr/techno77.htm'
+      registry_ru: 'Реестровая запись №8407 от 30.12.2020'
+
+    seaf.sw.distrib.0901.02:
+      s_name: 'Business Studio'
+      vendor: 'ООО "ГРУППА КОМПАНИЙ "СОВРЕМЕННЫЕ ТЕХНОЛОГИИ УПРАВЛЕНИЯ"'
+      class: seaf.sw.classifier.class.09.01
+      license: commercial
+      license_type: 'Проприетарная лицензия'
+      version: ''
+      support_expiration: 'нет данных'
+      description: 'система бизнес-моделирования'
+      web-site: 'https://www.businessstudio.ru/wiki/docs/current/doku.php/ru/manual/manual'
+      registry_ru: 'Реестровая запись №455 от 18.04.2016'

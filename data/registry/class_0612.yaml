@@ -1,0 +1,31 @@
+# Системы электронного документооборота
+
+  seaf.sw.distrib:
+    seaf.sw.distrib.0612.01:
+      s_name: 'Контур.Экстерн'
+      vendor: 'АО "ПРОИЗВОДСТВЕННАЯ ФИРМА "СКБ КОНТУР"'
+      class: seaf.sw.classifier.class.06.12
+      class_ext:
+        - seaf.sw.classifier.class.05.13
+      license: commercial
+      license_type: 'Проприетарная лицензия'
+      version: ''
+      support_expiration: 'нет данных'
+      description: 'Программа для ЭВМ «Контур-Экстерн» предназначена для осуществления документооборота между предприятиями всех форм собственности и государственными контролирующими органами. С помощью данной программы можно отчитываться в следующие контролирующие органы: ИФНС, ПФР, ФСС, Росстат, РПН, а также получать требования, решения и др. документы от ИФНС.'
+      web-site: 'https://kontur.ru/extern/docs'
+      registry_ru: 'Реестровая запись №523 от 29.04.2016'
+
+    seaf.sw.distrib.0612.02:
+      s_name: '"ТЕЗИС"'
+      f_name: 'Система управления документами и задачами "ТЕЗИС"'
+      vendor: 'ООО "ХОУЛМОНТ САМАРА"'
+      class: seaf.sw.classifier.class.06.12
+      class_ext:
+        - seaf.sw.classifier.class.09.11
+      license: commercial
+      license_type: 'Проприетарная лицензия'
+      version: ''
+      support_expiration: 'нет данных'
+      description: 'ТЕЗИС — система электронного документооборота'
+      web-site: 'http://www.tezis-doc.ru'
+      registry_ru: 'Реестровая запись №271 от 02.04.2016'

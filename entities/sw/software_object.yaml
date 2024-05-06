@@ -1,0 +1,152 @@
+entities:
+
+  seaf.sw.classifier.part:
+    title: Раздел классификации ПО
+    objects:
+      part:
+        route: "/"
+        title: Раздел классификации ПО
+    schema:
+      $defs:
+        seaf.sw.classifier.part:
+          type: object
+          properties:
+            part_name:
+              title: Раздел
+              type: string
+            part_id:
+              title: № раздела
+              type: string
+              enum: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12']
+          required:
+            - part_name
+            - part_id
+          additionalProperties: false
+      type: object
+      patternProperties:
+        "[a-zA-Z0-9_]*(\\.[a-zA-Z0-9_]*)*$":
+          type: object
+          $ref: "#/$defs/seaf.sw.classifier.part"
+
+  seaf.sw.classifier.class:
+    title: Класс ПО
+    objects:
+      class:
+        route: "/"
+        title: Класс ПО
+    schema:
+      $defs:
+        seaf.sw.classifier.class:
+          type: object
+          properties:
+            class_name:
+              title: Класс ПО
+              type: string
+            class_id:
+              title: ID класса
+              type: string
+            part:
+              title: Раздел ПО
+              type: string
+              $ref: "#/$rels/seaf.sw.classifier.part.part"
+            description:
+              title: Описание класса ПО
+              type: string
+          required:
+            - class_name
+            - class_id
+            - part
+            - description
+          additionalProperties: false
+      type: object
+      patternProperties:
+        "[a-zA-Z0-9_]*(\\.[a-zA-Z0-9_]*)*$":
+          type: object
+          $ref: "#/$defs/seaf.sw.classifier.class"
+
+# Базовое описание софта
+  seaf.sw.distrib:
+    title: Дистрибутив программного обеспечения
+    objects:
+      distrib:
+        route: "/"
+        title: Базовая сущность объекта Программное обеспечение
+    schema:
+      $defs:
+        seaf.sw.distrib:
+          type: object
+          properties:
+            s_name:
+              title: Краткое наименование ПО
+              type: string
+            f_name:
+              title: Наименование ПО
+              type: string
+            vendor:
+              title: Разработчик программного обеспечения (Vendor)
+              type: string
+            class:
+              title:  Класс программного обеспечения
+              type: string
+              $ref: "#/$rels/seaf.sw.classifier.class.class"
+            class_ext:
+              title: Дополнительные классы ПО
+              type: array
+              items:
+                $ref: "#/$rels/seaf.sw.classifier.class.class"
+            license:
+              title: Вид лицензии
+              type: string
+              enum: [ 'opensource', 'freeware', 'shareware', 'commercial' ]
+            license_type:
+              title: Тип лицензии
+              type: string
+              enum :
+                - 'GNU General Public License (GPL)'
+                - 'Apache License'
+                - 'MIT License'
+                - 'BSD License'
+                - 'Mozilla Public License (MPL)'
+                - 'Eclipse Public License (EPL)'
+                - 'The Unlicense'
+                - 'zlib License'
+                - 'PostgreSQL License'
+                - 'CDDL'
+                - 'Artistic License 2.0'
+                - 'SIL Open Font License'
+                - 'Eclipse Distribution License v. 1.0'
+                - 'Boost Software License - Version 1.0'
+                - 'Apple Public Source License 2.0'
+                - 'Microsoft Public License (MS-PL)'
+                - 'Microsoft Reciprocal License (MS-RL)'
+                - 'Проприетарная лицензия'
+                - 'Договор'
+            version:
+              title: Версия ПО
+              type: string
+            support_expiration:
+              title: Поддержка вендора до ....
+              type: string
+            description:
+              title: Описание продукта
+              type: string
+            web-site:
+              title: Сайт производителя
+              type: string
+            registry_ru:
+              title: Запись в реестре ПО РФ
+              type: string
+          required:
+            - s_name
+            - vendor
+            - class
+            - license
+            - license_type
+            - version
+            - support_expiration
+      type: object
+      patternProperties:
+        "[a-zA-Z0-9_]*(\\.[a-zA-Z0-9_]*)*$":
+          type: object
+          $ref: "#/$defs/seaf.sw.distrib"
+
