@@ -1,3 +1,17 @@
+## Метаданные пакета
+$package:
+  software-registry: # Идентификатор пакета
+  # Краткое название пакета
+  name: SW.REGISTRY
+  # Поставщик
+  vendor: Sber
+  # Описание
+  description: Software registry package
+  # Версия
+  version: 0.1.0
+  # Зависимости от других пакетов
+  dependencies:
+    seaf-core: ">=1.2.7"
 imports:
   - entities/root.yaml
   - data/root.yaml
