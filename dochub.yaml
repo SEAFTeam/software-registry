@@ -8,10 +8,11 @@ $package:
     # Описание
     description: Software registry package
     # Версия
-    version: 0.1.0
+    version: 0.1.1
     # Зависимости от других пакетов
     dependencies:
-      seaf-core: ">=1.2.7"
+      seaf-core: ">=1.2.6"
+      #seaf-dzo-core: ">=1.2.6"
 docs:
   seaf.sw.general:
     description: SEAF Программное обеспечение

@@ -1,0 +1,64 @@
+# Расширение технической архитектуры (для пакета ДЗО)
+# При использовании пакета ДЗО раскоментировать ссылку в ./root.yaml
+
+entities:
+  seaf.ta.components.kb:
+    schema:
+      $defs:
+        seaf.ta.components.kb.sw:
+          title: Расширение компонента cервис кибер безопасности
+          type: object
+          properties:
+            distrib:
+              title: Дистрибутив
+              type: string
+              $ref: "#/$rels/seaf.sw.distrib.distrib"
+          required:
+            - distrib
+      patternProperties:
+        "^[a-zA-Z0-9_\\.]*$":
+          type: object
+          properties:
+            soft:
+              $ref: "#/$defs/seaf.ta.components.kb.sw"
+
+  seaf.ta.components.k8s_pod:
+    schema:
+      $defs:
+        seaf.ta.components.k8s_pod.sw:
+          title: Расширение компонента POD K8s
+          type: object
+          properties:
+            distrib:
+              title: Дистрибутив
+              type: string
+              $ref: "#/$rels/seaf.sw.distrib.distrib"
+          required:
+            - distrib
+      patternProperties:
+        "^[a-zA-Z0-9_\\.]*$":
+          type: object
+          properties:
+            soft:
+              $ref: "#/$defs/seaf.ta.components.k8s_pod.sw"
+
+  seaf.ta.components.k8s_image:
+    schema:
+      $defs:
+        seaf.ta.components.k8s_image.sw:
+          title: Расширение компонента POD K8s
+          type: object
+          properties:
+            distrib:
+              title: Дистрибутив
+              type: string
+              $ref: "#/$rels/seaf.sw.distrib.distrib"
+          required:
+            - distrib
+      patternProperties:
+        "^[a-zA-Z0-9_\\.]*$":
+          type: object
+          properties:
+            soft:
+              $ref: "#/$defs/seaf.ta.components.k8s_image.sw"
+
