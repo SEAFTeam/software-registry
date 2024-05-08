@@ -1,0 +1,23 @@
+# Расширение технической архитектуры (для пакета ДЗО)
+# При использовании пакета ДЗО раскоментировать ссылку в ./root.yaml
+
+entities:
+  seaf.ta.services.kb:
+    schema:
+      $defs:
+        seaf.ta.services.kb.sw:
+          title: Расширение компонента cервис кибер безопасности
+          type: object
+          properties:
+            distrib:
+              title: Дистрибутив
+              type: string
+              $ref: "#/$rels/seaf.sw.distrib.distrib"
+          required:
+            - distrib
+      patternProperties:
+        "^[a-zA-Z0-9_\\.]*$":
+          type: object
+          properties:
+            soft:
+              $ref: "#/$defs/seaf.ta.services.kb.sw"

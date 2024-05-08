@@ -2,25 +2,6 @@
 # При использовании пакета ДЗО раскоментировать ссылку в ./root.yaml
 
 entities:
-  seaf.ta.components.kb:
-    schema:
-      $defs:
-        seaf.ta.components.kb.sw:
-          title: Расширение компонента cервис кибер безопасности
-          type: object
-          properties:
-            distrib:
-              title: Дистрибутив
-              type: string
-              $ref: "#/$rels/seaf.sw.distrib.distrib"
-          required:
-            - distrib
-      patternProperties:
-        "^[a-zA-Z0-9_\\.]*$":
-          type: object
-          properties:
-            soft:
-              $ref: "#/$defs/seaf.ta.components.kb.sw"
 
   seaf.ta.components.k8s_pod:
     schema:

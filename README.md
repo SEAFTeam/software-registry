@@ -77,6 +77,7 @@
     |  |  |  |- core-dzo                    - Расширение entity модели seaf-core-dzo
     |  |  |  |  |- ta                       - Расширение entity технического слоя модели seaf-core-dzo
     |  |  |  |  |  |- components.yaml       - Расширение моделей компонент технической архитектуры пакета seaf-dzo-core
+    |  |  |  |  |  |- services.yaml         - Расширение моделей сервис технической архитектуры пакета seaf-dzo-core
     |  |  |  |- core                        - Расширение entity модели seaf-core
     |  |  |  |  |- app                      - Расширение entity прикладного слоя модели seaf-core
     |  |  |  |  |  |- app_ext.yaml          - Расширение программной архитектуры
