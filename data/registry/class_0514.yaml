@@ -1,0 +1,34 @@
+# Справочно-правовые системы
+
+  seaf.sw.distrib:
+    seaf.sw.distrib.0514.01:
+      s_name: '"Система ГАРАНТ"'
+      f_name: 'Электронный периодический справочник "Система ГАРАНТ"'
+      vendor: 'ООО "ГАРАНТ-СЕРВИС-УНИВЕРСИТЕТ"'
+      class: seaf.sw.classifier.class.05.14
+      class_ext:
+        - seaf.sw.classifier.class.05.04
+        - seaf.sw.classifier.class.05.10
+      license: commercial
+      license_type: 'Проприетарная лицензия'
+      version: ''
+      support_expiration: 'нет данных'
+      description: ''
+      web-site: 'http://garant-service-universitet.ru/system'
+      registry_ru: 'Реестровая запись №6 от 20.02.2016'
+
+    seaf.sw.distrib.0514.02:
+      s_name: 'Консультант+'
+      f_name: 'Справочная правовая система (СПС) КонсультантПлюс'
+      vendor: 'ЗАО "КОНСУЛЬТАНТ ПЛЮС"'
+      class: seaf.sw.classifier.class.05.14
+      class_ext:
+        - seaf.sw.classifier.class.05.04
+        - seaf.sw.classifier.class.12.20
+      license: commercial
+      license_type: 'Проприетарная лицензия'
+      version: ''
+      support_expiration: 'нет данных'
+      description: ''
+      web-site: 'http://www.consultant.ru/about/sps'
+      registry_ru: 'Реестровая запись №212 от 18.03.2016'

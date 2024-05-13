@@ -1,0 +1,40 @@
+# Серверное и связующее программное обеспечение
+
+seaf.sw.distrib:
+  seaf.sw.distrib.0206.01:
+    s_name: 'HAProxy'
+    f_name: 'HAProxy 2.8 (LTS)'
+    vendor: 'https://www.haproxy.org/'
+    class: seaf.sw.classifier.class.02.06
+    license: opensource
+    license_type: 'GNU General Public License (GPL)'
+    version: '2.8'
+    support_expiration: '2028Q2'
+    description: 'The Reliable, High Performance TCP/HTTP Load Balancer'
+    web-site: 'https://www.haproxy.org/'
+
+  seaf.sw.distrib.0206.02:
+    s_name: 'HAProxy'
+    f_name: 'HAProxy 2.9 (stable)'
+    vendor: 'https://www.haproxy.org/'
+    class: seaf.sw.classifier.class.02.06
+    license: opensource
+    license_type: 'GNU General Public License (GPL)'
+    version: '2.9'
+    support_expiration: '2025Q1'
+    description: 'The Reliable, High Performance TCP/HTTP Load Balancer'
+    web-site: 'https://www.haproxy.org/'
+
+  seaf.sw.distrib.0206.03:
+    s_name: 'SynGX'
+    f_name: 'Platform V SynGX'
+    vendor: 'АО "СБЕРБАНК - ТЕХНОЛОГИИ"'
+    class: seaf.sw.classifier.class.02.06
+    license: commercial
+    license_type: 'Проприетарная лицензия'
+    version: ''
+    support_expiration: ''
+    web-site: 'https://sbertech.ru/documents'
+    registry_ru: 'Реестровая запись №17374 от 21.04.2023'
+
+

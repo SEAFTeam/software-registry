@@ -1,0 +1,54 @@
+# Межсетевые экраны
+
+  seaf.sw.distrib:
+    seaf.sw.distrib.0303.01:
+      s_name: 'Комплекс «ФПСУ-IP»'
+      f_name: 'Криптографическая подсистема аппаратно-программного комплекса ФПСУ-IP "Сервер ключевания" 3.0'
+      vendor: 'ООО "АМИКОН"'
+      class: seaf.sw.classifier.class.03.03
+      class_ext:
+        - seaf.sw.classifier.class.03.01
+        - seaf.sw.classifier.class.03.04
+        - seaf.sw.classifier.class.03.05
+        - seaf.sw.classifier.class.03.10
+        - seaf.sw.classifier.class.03.11
+        - seaf.sw.classifier.class.03.14
+      license: commercial
+      license_type: 'Проприетарная лицензия'
+      version: '3'
+      support_expiration: 'нет данных'
+      description: ''
+      web-site: 'https://amicon.ru/FPSU-IP'
+      registry_ru: 'Реестровая запись №14790 от 05.09.2022'
+
+    seaf.sw.distrib.0303.02:
+      s_name: 'Комплекс «ФПСУ-IP»'
+      f_name: 'Комплекс «ФПСУ-IP» версии 4 (Amigo)'
+      vendor: 'ООО "АМИКОН"'
+      class: seaf.sw.classifier.class.03.03
+      class_ext:
+        - seaf.sw.classifier.class.03.01
+        - seaf.sw.classifier.class.03.04
+        - seaf.sw.classifier.class.03.05
+        - seaf.sw.classifier.class.03.10
+        - seaf.sw.classifier.class.03.11
+        - seaf.sw.classifier.class.03.14
+      license: commercial
+      license_type: 'Проприетарная лицензия'
+      version: '4'
+      support_expiration: 'нет данных'
+      description: 'Криптомаршрутизатор и межсетевой экран «ФПСУ-IP» (сокращенное название от «Фильтр пакетов сетевого уровня IP протокола») версии 4 является средством защиты от несанкционированного доступа к информации.'
+      web-site: 'https://amicon.ru/FPSU-IP'
+      registry_ru: 'Реестровая запись №19484 от 17.10.2023'
+
+    seaf.sw.distrib.0303.04:
+      s_name: 'BI.ZONE WAF'
+      vendor: 'ООО "Безопасная информационная зона"'
+      class: seaf.sw.classifier.class.03.03
+      license: commercial
+      license_type: 'Проприетарная лицензия'
+      version: ''
+      support_expiration: 'нет данных'
+      description: 'Защита веб-приложений под управлением экспертов'
+      web-site: 'https://bi.zone/ru/mss/cwaf/'
+      registry_ru: 'Реестровая запись №8909 от 21.01.2021'

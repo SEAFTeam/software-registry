@@ -1,0 +1,74 @@
+# Средства управления базами данных
+
+seaf.sw.distrib:
+  
+  seaf.sw.distrib.0207.01:
+    s_name: PosgreSQL
+    f_name: PostgreSQL 16
+    vendor: PostgreSQL Global Development Group
+    class: seaf.sw.classifier.class.02.09
+    license: opensource
+    license_type: 'PostgreSQL License'
+    version: '16.2'
+    support_expiration: 09/11/2028
+
+  seaf.sw.distrib.0207.02:
+    s_name: PosgreSQL
+    f_name: PostgreSQL 15
+    vendor: PostgreSQL Global Development Group
+    class: seaf.sw.classifier.class.02.09
+    license: opensource
+    license_type: 'PostgreSQL License'
+    version: '15.6'
+    support_expiration: 11/11/2027
+
+  seaf.sw.distrib.0207.03:
+    s_name: PosgreSQL
+    f_name: PostgreSQL 14
+    vendor: PostgreSQL Global Development Group
+    class: seaf.sw.classifier.class.02.09
+    license: opensource
+    license_type: 'PostgreSQL License'
+    version: '14.11'
+    support_expiration: 12/11/2026
+
+  seaf.sw.distrib.0207.04:
+    s_name: PosgreSQL
+    f_name: PostgreSQL 13
+    vendor: PostgreSQL Global Development Group
+    class: seaf.sw.classifier.class.02.09
+    license: opensource
+    license_type: 'PostgreSQL License'
+    version: '13.4'
+    support_expiration: 13/11/2025
+
+  seaf.sw.distrib.0207.05:
+    s_name: SQL Server 2022
+    f_name: MS SQL Server 2022
+    vendor: Microsoft inc.
+    class: seaf.sw.classifier.class.02.09
+    license: commercial
+    license_type: Проприетарная лицензия
+    version: '2022'
+    support_expiration: ' main 2028, ext 2033'
+
+  seaf.sw.distrib.0207.06:
+    s_name: SQL Server 2019
+    f_name: MS SQL Server 2019
+    vendor: Microsoft inc.
+    class: seaf.sw.classifier.class.02.09
+    license: commercial
+    license_type: Проприетарная лицензия
+    version: '2022'
+    support_expiration: ' main 2025, ext 2030'
+
+  seaf.sw.distrib.0207.07:
+    s_name: MySQL Comm
+    f_name: MySQL Community Server
+    vendor: Oracle corp.
+    class: seaf.sw.classifier.class.02.09
+    license: opensource
+    license_type: GNU General Public License (GPL)
+    version: '8.3.0'
+    support_expiration: '30/04/2026'
+

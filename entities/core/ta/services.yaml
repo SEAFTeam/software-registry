@@ -1,0 +1,142 @@
+# Расширение технической архитектуры
+
+entities:
+  seaf.ta.services.cluster:
+    schema:
+      $defs:
+        seaf.ta.services.cluster.sw:
+          title: Расширение компонента Cluster
+          type: object
+          properties:
+            distrib:
+              title: Дистрибутив
+              type: string
+              $ref: "#/$rels/seaf.sw.distrib.distrib"
+          required:
+            - distrib
+      patternProperties:
+        "^[a-zA-Z0-9_\\.]*$":
+          type: object
+          properties:
+            soft:
+              $ref: "#/$defs/seaf.ta.services.cluster.sw"
+
+  seaf.ta.services.compute_service:
+    schema:
+      $defs:
+        seaf.ta.services.compute_service.sw:
+          title: Расширение компонента Compute Service
+          type: object
+          properties:
+            distrib:
+              title: Дистрибутив
+              type: string
+              $ref: "#/$rels/seaf.sw.distrib.distrib"
+          required:
+            - distrib
+      patternProperties:
+        "^[a-zA-Z0-9_\\.]*$":
+          type: object
+          properties:
+            soft:
+              $ref: "#/$defs/seaf.ta.services.compute_service.sw"
+
+  seaf.ta.services.storage:
+    schema:
+      $defs:
+        seaf.ta.services.storage.sw:
+          title: Расширение компонента SDS
+          type: object
+          properties:
+            distrib:
+              title: Дистрибутив
+              type: string
+              $ref: "#/$rels/seaf.sw.distrib.distrib"
+          required:
+            - distrib
+      patternProperties:
+        "^[a-zA-Z0-9_\\.]*$":
+          type: object
+          properties:
+            soft:
+              $ref: "#/$defs/seaf.ta.services.storage.sw"
+
+  seaf.ta.services.cluster_virtualization:
+    schema:
+      $defs:
+        seaf.ta.services.cluster_virtualization.sw:
+          title: Расширение компонента кластера виртуализации
+          type: object
+          properties:
+            distrib:
+              title: Дистрибутив
+              type: string
+              $ref: "#/$rels/seaf.sw.distrib.distrib"
+          required:
+            - distrib
+      patternProperties:
+        "^[a-zA-Z0-9_\\.]*$":
+          type: object
+          properties:
+            soft:
+              $ref: "#/$defs/seaf.ta.services.cluster_virtualization.sw"
+
+  seaf.ta.services.k8s:
+    schema:
+      $defs:
+        seaf.ta.services.k8s.sw:
+          title: Расширение компонента Kubernetes Cluster
+          type: object
+          properties:
+            distrib:
+              title: Дистрибутив
+              type: string
+              $ref: "#/$rels/seaf.sw.distrib.distrib"
+          required:
+            - distrib
+      patternProperties:
+        "^[a-zA-Z0-9_\\.]*$":
+          type: object
+          properties:
+            soft:
+              $ref: "#/$defs/seaf.ta.services.k8s.sw"
+
+  seaf.ta.services.backup:
+    schema:
+      $defs:
+        seaf.ta.services.backup.sw:
+          title: Расширение компонента Backup Service
+          type: object
+          properties:
+            distrib:
+              title: Дистрибутив
+              type: string
+              $ref: "#/$rels/seaf.sw.distrib.distrib"
+          required:
+            - distrib
+      patternProperties:
+        "^[a-zA-Z0-9_\\.]*$":
+          type: object
+          properties:
+            soft:
+              $ref: "#/$defs/seaf.ta.services.backup.sw"
+
+  seaf.ta.services.monitoring:
+    schema:
+      $defs:
+        seaf.ta.services.monitoring.sw:
+          title: Расширение компонента Monitoring Service
+          type: object
+          properties:
+            distrib:
+              title: Дистрибутив
+              type: string
+              $ref: "#/$rels/seaf.sw.distrib.distrib"
+          required:
+            - distrib
+      patternProperties:
+        "^[a-zA-Z0-9_\\.]*$":
+          type: object
+          properties:
+            soft:
+              $ref: "#/$defs/seaf.ta.services.monitoring.sw"

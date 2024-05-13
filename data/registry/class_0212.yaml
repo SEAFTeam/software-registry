@@ -1,0 +1,13 @@
+# Системы контейнеризации и контейнеры
+
+seaf.sw.distrib:
+
+  seaf.sw.distrib.0212.01:
+    s_name: K8S
+    f_name: kubernetes
+    vendor: Google (kubernetes.io)
+    class: seaf.sw.classifier.class.02.12
+    license: opensource
+    license_type: 'Apache License'
+    version: '1.29'
+    support_expiration: '28/02/2025'

@@ -1,0 +1,16 @@
+entities:
+  # Структура меню
+  seaf.sw.menu:
+    menu: >
+      (
+          [
+              {
+                  'location': 'Метамодель/Программное обеспечение/Классификатор ПО',
+                  'link': 'entities/seaf.sw/classifier_md'
+              },
+              {
+                  'location': 'Метамодель/Программное обеспечение/Реестр ПО',
+                  'link': 'entities/seaf.sw/registry_md'
+              }
+          ]
+      )

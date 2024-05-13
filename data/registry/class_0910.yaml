@@ -1,0 +1,14 @@
+# Средства управления ИТ-службой, ИТ-инфраструктурой и ИТ-активами (ITSM-ServiceDesk, SCCM, Asset Management)
+
+  seaf.sw.distrib:
+    seaf.sw.distrib.0910.01:
+      s_name: 'Naumen Service Desk'
+      vendor: 'AO  "НАУМЕН"'
+      class: seaf.sw.classifier.class.09.10
+      license: commercial
+      license_type: 'Проприетарная лицензия'
+      version: ''
+      support_expiration: 'нет данных'
+      description: ''
+      web-site: 'http://www.naumen.ru/products/service_desk/'
+      registry_ru: 'Реестровая запись №196 от 18.03.2016'

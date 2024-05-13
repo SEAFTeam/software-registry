@@ -1,0 +1,28 @@
+# Файл для расширения реестра ПО
+# Если вы хотите расширить вашими дополнениями общий справочник просим вас предерживаться следующех правил наименования
+# дистрибутивов :
+#
+# seaf.sw.ext.XXXX.YY
+# XXXХ - четырехзначный номер из классификатора ПО  ( например 0209 - Операционные системы общего назначения )
+# YY - номер объекта в формате 01-99
+#
+seaf.sw.distrib:
+  seaf.sw.ext.0303.10:
+    s_name: Soft Test
+    vendor: Unknown
+    class: seaf.sw.classifier.class.03.03
+    license: opensource
+    license_type: GNU General Public License (GPL)
+    version: '01'
+    support_expiration: '2028Q3'
+
+  seaf.sw.distrib.Thanos.1:
+    s_name: Thanos DB
+    vendor: OpenSource
+    class: seaf.sw.classifier.class.02.07
+    license: opensource
+    license_type: GNU General Public License (GPL)
+    version: '1'
+    support_expiration: '11'
+
+
