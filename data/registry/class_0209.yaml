@@ -107,3 +107,60 @@ seaf.sw.distrib:
     license_type: GNU General Public License (GPL)
     version: '11'
     support_expiration: 31/07/2024
+
+  seaf.sw.distrib.0209.12:
+    s_name: Windows Server 2016
+    vendor: Microsoft inc.
+    class: seaf.sw.classifier.class.02.09
+    license: commercial
+    license_type: Проприетарная лицензия
+    version: 2016
+    support_expiration: 12/01/2027 (11/01/22 Mainstream)
+
+  seaf.sw.distrib.0209.13:
+    s_name: CentOs
+    f_name: CentOs Stream 7
+    vendor: Read Hat.
+    class: seaf.sw.classifier.class.02.09
+    license: opensource
+    license_type: GNU General Public License (GPL)
+    version: '7'
+    support_expiration: 30/06/2024
+
+  seaf.sw.distrib.0209.14:
+    s_name: Oracle Linux 7
+    vendor: Oracle Inc.
+    class: seaf.sw.classifier.class.02.09
+    license: opensource
+    license_type: ORACLE LINUX LICENSE
+    version: '7'
+    support_expiration: 30/06/2024
+
+  seaf.sw.distrib.0209.15:
+    s_name: Fedora Linux
+    vendor: Red Hat.
+    class: seaf.sw.classifier.class.02.09
+    license: opensource
+    license_type: 'MIT License'
+    version: '37'
+    support_expiration: 25/12/2024
+
+  seaf.sw.distrib.0209.16:
+    s_name: RHEL 8
+    f_name: Red Hat Enterprise Linux 8
+    vendor: Read Hat.
+    class: seaf.sw.classifier.class.02.09
+    license: commercial
+    license_type: 'Проприетарная лицензия'
+    version: '8.8'
+    support_expiration: 31/05/2025
+
+  seaf.sw.distrib.0209.17:
+    s_name: RHEL 9
+    f_name: Red Hat Enterprise Linux 9
+    vendor: Read Hat.
+    class: seaf.sw.classifier.class.02.09
+    license: commercial
+    license_type: 'Проприетарная лицензия'
+    version: '9.4'
+    support_expiration: 30/04/2028
